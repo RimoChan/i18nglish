@@ -18,10 +18,7 @@ func main() {
 }
 
 func i7h(w2d string) string {
-	if len(strings.TrimSpace(w2d)) == 0 {
-		return w2d
-	}
-	r2n := []rune(w2d)
+	r2n := []rune(strings.TrimSpace(w2d))
 	if len(r2n) <= 3 {
 		return w2d
 	}
