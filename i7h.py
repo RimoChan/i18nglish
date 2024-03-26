@@ -3,8 +3,8 @@ import re
 
 def _f(r):
     t = r.group()
-    if len(t) <= 2:
-        return t
+    if len(t) <= 1:
+        return f'{t[0]}({len(t)-2}){t[-1]}'
     return f'{t[0]}{len(t)-2}{t[-1]}'
 
 
